@@ -6,9 +6,18 @@
     <resultMap type="com.slowgenius.myblog.entity.UserEntity" id="userMap">
         <result property="id" column="id"/>
         <result property="userName" column="user_name"/>
+        <result property="password" column="password"/>
     </resultMap>
+
     <select id="queryObject" resultMap="userMap">
         select * from myblog_user where id = #{id}
     </select>
 
+    <select id="queryByNameAndPassword" resultMap="userMap">
+        select *
+        from myblog_user
+        where user_name = #{userName}
+          and password = #{password};
+
+    </select>
 </mapper>

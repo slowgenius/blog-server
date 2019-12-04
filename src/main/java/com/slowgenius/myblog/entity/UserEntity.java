@@ -1,5 +1,9 @@
 package com.slowgenius.myblog.entity;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 /**
@@ -7,6 +11,7 @@ import java.io.Serializable;
  * @date 2019/12/2 18:33
  * @description
  */
+@Data
 public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -15,20 +20,7 @@ public class UserEntity implements Serializable {
     private Integer id;
     //用户名称
     private String userName;
+    //密码
+    private String password;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 }

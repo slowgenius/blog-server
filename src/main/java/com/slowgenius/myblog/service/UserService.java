@@ -11,4 +11,5 @@ public interface UserService {
 
     UserEntity queryObject(Integer id);
 
+    UserEntity queryByNameAndPassword(String userName, String password);
 }

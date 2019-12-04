@@ -1,7 +1,9 @@
 package com.slowgenius.myblog.controller;
 
+import com.slowgenius.myblog.entity.UserEntity;
 import com.slowgenius.myblog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,12 +13,20 @@ import org.springframework.web.bind.annotation.RestController;
  * @description
  */
 @RestController
+@RequestMapping("login")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("hello")
-    public String helloWorld(Integer id) {
-        return userService.queryObject(id).getUserName();
+    @CrossOrigin
+    @RequestMapping("login")
+    public String login(String userName, String password) {
+        UserEntity user = userService.queryByNameAndPassword(userName, password);
+        if (user != null && password.equals(user.getPassword())) {
+            return "1";
+        }
+        return "0";
     }
+
+
 }

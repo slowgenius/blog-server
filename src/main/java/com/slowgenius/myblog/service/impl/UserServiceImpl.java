@@ -16,9 +16,14 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+
     @Override
     public UserEntity queryObject(Integer id) {
         return userMapper.queryObject(id);
     }
 
+    @Override
+    public UserEntity queryByNameAndPassword(String userName, String password) {
+        return userMapper.queryByNameAndPassword(userName, password);
+    }
 }
