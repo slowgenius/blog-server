@@ -1,8 +1,8 @@
-package com.slowgenius.myblog.service.impl;
+package com.slowgenius.blog.service.impl;
 
-import com.slowgenius.myblog.entity.UserEntity;
-import com.slowgenius.myblog.mapper.UserMapper;
-import com.slowgenius.myblog.service.UserService;
+import com.slowgenius.blog.entity.UserEntity;
+import com.slowgenius.blog.mapper.UserMapper;
+import com.slowgenius.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

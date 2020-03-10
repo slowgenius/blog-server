@@ -1,6 +1,6 @@
-package com.slowgenius.myblog.mapper;
+package com.slowgenius.blog.mapper;
 
-import com.slowgenius.myblog.entity.UserEntity;
+import com.slowgenius.blog.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

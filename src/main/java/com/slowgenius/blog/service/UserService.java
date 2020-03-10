@@ -1,6 +1,6 @@
-package com.slowgenius.myblog.service;
+package com.slowgenius.blog.service;
 
-import com.slowgenius.myblog.entity.UserEntity;
+import com.slowgenius.blog.entity.UserEntity;
 
 /**
  * @author slowgenius

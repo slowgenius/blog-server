@@ -1,4 +1,4 @@
-package com.slowgenius.myblog;
+package com.slowgenius.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package com.slowgenius.myblog.controller;
+package com.slowgenius.blog.controller;
 
-import com.slowgenius.myblog.entity.UserEntity;
-import com.slowgenius.myblog.service.UserService;
+import com.slowgenius.blog.entity.UserEntity;
+import com.slowgenius.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +27,4 @@ public class UserController {
         }
         return "0";
     }
-
-
 }

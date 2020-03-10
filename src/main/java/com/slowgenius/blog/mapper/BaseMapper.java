@@ -1,4 +1,4 @@
-package com.slowgenius.myblog.mapper;
+package com.slowgenius.blog.mapper;
 
 /**
  * @author slowgenius
